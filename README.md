@@ -2,7 +2,8 @@
 
 ## Description
 
-1. Enhanced-Base64-Gzip-Editor is a Burp Suite extension designed to streamline the decoding of Base64-encoded and gzip-compressed data. It automates the process of decoding Base64 input, extracting the gzip content, and outputting the decompressed result for efficient analysis of encoded payloads.
+Enhanced-Base64-Gzip-Editor is a Burp Suite extension designed to streamline the decoding of Base64-encoded and gzip-compressed data. It automates the process of decoding Base64 input, extracting the gzip content, and outputting the decompressed result for efficient analysis of encoded payloads.
+It takes the value in Base64, decodes it and unpacks it. Under the hood it does the following: echo 'some_value_there' | base64 -d > decoded.gz && gunzip -c decoded.gz > dec.txt
 
 ## Installation
 
@@ -17,10 +18,10 @@ Upload Enhanced_Base64_&_Gzip_Editor.py to Burp Extension section.
 
 ## Features 
 
-- It takes the value in Base64, decodes it and unpacks it. Under the hood it does the following: echo 'some_value_there' | base64 -d > decoded.gz && gunzip -c decoded.gz > dec.txt
-- This works in the Intercept and Repeater tabs.
+- This extension works in the Intercept and Repeater tabs.
 - In the Repeater section you can modify the request (change the body), save it and send it.
-- In the Response section you can view the response. 
+- In the Response section you can view the response.
+- Suppors Latin and Cyrillic characters.
 - [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py)
 
 ![Snow leopard screenhot](img/chrome_z4WZhOWScT.png)
@@ -55,24 +56,6 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
 ```
 
 ---
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-Here is a simple footnote[^1].
-
 A footnote can also have multiple lines[^2].
 
 [^1]: My reference.
