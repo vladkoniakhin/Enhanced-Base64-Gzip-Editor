@@ -150,11 +150,12 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
 
 ---
 
-## Description
+## Description(business idea)
 
 1. Some text will be there :
 - The first one
 - The second one
+- Relative link [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py)
 
 ## Features 
 
