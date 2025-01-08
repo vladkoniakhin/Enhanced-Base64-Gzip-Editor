@@ -162,3 +162,5 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
 2. The second one
 
 ![Snow leopard](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR6JobTpe8G1uwx7844qANeNFqJ4yi18vkXhLhzrXYYqeKR5QEfMYLB_9aBfBj1ElqjEPjZTC83SegBzNccgpz1w)
+
+![Snow leopard screenhot](img/chrome_z4WZhOWScT.png)
