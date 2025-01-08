@@ -36,6 +36,13 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
 - The second one
 - Relative link [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py)
 
+## Installation
+
+### Pre-requirements
+
+1. Install on you computer [Jython](https://www.jython.org/download.html)
+2. Install ![blabla](img/BurpSuitePro_Zo8aGQKd9H.png)
+
 ## Features 
 
 1. The first feature
