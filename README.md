@@ -14,7 +14,8 @@ It takes the value in Base64, decodes it and unpacks it. Under the hood it does 
 
 ### Installation 
 
-Upload Enhanced_Base64_&_Gzip_Editor.py to Burp Extension section.
+1. Upload [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py) to Burp Extension section.
+2. Or Clone this repo `git clone https://github.com/vladkoniakhin/Enhanced-Base64-Gzip-Editor.git`
 
 ## Features 
 
@@ -22,9 +23,11 @@ Upload Enhanced_Base64_&_Gzip_Editor.py to Burp Extension section.
 - In the Repeater section you can modify the request (change the body), save it and send it.
 - In the Response section you can view the response.
 - Suppors Latin and Cyrillic characters.
-- [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py)
 
-![Snow leopard screenhot](img/chrome_z4WZhOWScT.png)
+## Screenshots
+
+![Encoded request](img/1.png)
+![Decoded](img/2.png)
 
 ### Example of the code
 
@@ -54,10 +57,3 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
                 gz.write(data.encode('utf-8'))
             return byte_io.getvalue()
 ```
-
----
-A footnote can also have multiple lines[^2].
-
-[^1]: My reference.
-[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-  This is a second line.
