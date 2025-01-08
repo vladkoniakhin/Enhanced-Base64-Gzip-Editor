@@ -1,5 +1,32 @@
 # Enhanced-Base64-Gzip-Editor
 
+## Description
+
+1. Enhanced-Base64-Gzip-Editor is a Burp Suite extension designed to streamline the decoding of Base64-encoded and gzip-compressed data. It automates the process of decoding Base64 input, extracting the gzip content, and outputting the decompressed result for efficient analysis of encoded payloads.
+
+## Installation
+
+### Pre-requirements
+
+> [!NOTE]
+> Should be installed [Jython](https://www.jython.org/download.html).
+
+### Installation 
+
+Upload Enhanced_Base64_&_Gzip_Editor.py to Burp Extension section.
+
+## Features 
+
+- It takes the value in Base64, decodes it and unpacks it. Under the hood it does the following: echo 'some_value_there' | base64 -d > decoded.gz && gunzip -c decoded.gz > dec.txt
+- This works in the Intercept and Repeater tabs.
+- In the Repeater section you can modify the request (change the body), save it and send it.
+- In the Response section you can view the response. 
+- [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py)
+
+![Snow leopard screenhot](img/chrome_z4WZhOWScT.png)
+
+### Example of the code
+
 ```python
 # -*- coding: utf-8 -*-
 from burp import IBurpExtender, IContextMenuFactory, IHttpListener, IContextMenuInvocation
@@ -28,29 +55,6 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, IHttpListener):
 ```
 
 ---
-
-## Description(business idea)
-
-1. Some text will be there :
-- The first one
-- The second one
-- Relative link [Enhanced Base64 & Gzip Editor](Enhanced_Base64_%26_Gzip_Editor.py)
-
-## Installation
-
-### Pre-requirements
-
-1. Install on you computer [Jython](https://www.jython.org/download.html)
-2. Install ![blabla](img/BurpSuitePro_Zo8aGQKd9H.png)
-
-## Features 
-
-1. The first feature
-2. The second one
-
-![Snow leopard](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR6JobTpe8G1uwx7844qANeNFqJ4yi18vkXhLhzrXYYqeKR5QEfMYLB_9aBfBj1ElqjEPjZTC83SegBzNccgpz1w)
-
-![Snow leopard screenhot](img/chrome_z4WZhOWScT.png)
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
