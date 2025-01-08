@@ -3,7 +3,7 @@
 ## Description
 
 Enhanced-Base64-Gzip-Editor is a Burp Suite extension designed to streamline the decoding of Base64-encoded and gzip-compressed data. It automates the process of decoding Base64 input, extracting the gzip content, and outputting the decompressed result for efficient analysis of encoded payloads.
-It takes the value in Base64, decodes it and unpacks it. Under the hood it does the following: echo 'some_value_there' | base64 -d > decoded.gz && gunzip -c decoded.gz > dec.txt
+It takes the value in Base64, decodes it and unpacks it. Under the hood it does the following: `echo 'some_value_there' | base64 -d > decoded.gz && gunzip -c decoded.gz > dec.txt`
 
 ## Installation
 
